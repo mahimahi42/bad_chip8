@@ -24,7 +24,6 @@ public class Disassembler : MonoBehaviour {
 
         byte[] romBytes = File.ReadAllBytes (testRomPath);
         StringBuilder sb = new StringBuilder ();
-        List<byte> currBytes = new List<byte> ();
 
         for (int i = 0; i < romBytes.Length; i += 8) {
             sb.Append (GetRomDumpMemoryAddress (i));
@@ -32,27 +31,6 @@ public class Disassembler : MonoBehaviour {
             sb.Append (GetRomDumpAsciiRepr (romBytes, i));
             sb.Append ("\n");
         }
-
-
-
-
-
-        //sb.Append (string.Format ("0x{0:X4}  |  ", 0));
-        //for (int i = 0; i < romBytes.Length; i += 2) {
-        //    if (i < romBytes.Length - 1)
-        //        sb.Append (string.Format ("0x{0:X2}{1:X2}", romBytes[i], romBytes[i + 1]) + " ");
-        //    else
-        //        sb.Append (string.Format ("0x{0:X2}", romBytes[i]) + " ");
-        //    currBytes.Add (romBytes[i]);
-        //    if (i % 8 == 0 && i != 0 || i == 8) {
-        //        sb.Append ("  |  ");
-        //        foreach (byte b in currBytes) {
-        //            sb.Append (GetAsciiCharOrWhitespace (b));
-        //        }
-        //        currBytes.Clear ();
-        //        sb.Append ("\n" + string.Format ("0x{0:X4}  |  ", i));
-        //    }
-        //}
 
         outputText.text = sb.ToString ();
         Debug.Log ("Done");

@@ -311,7 +311,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.75
-  m_Text: '0x0000  |  0xA2 0xB4 0x23 0xE6   |    # '
+  m_Text: 0x0000  |  0xA2AA 0xB4AA 0x23AA 0xE6AA   |  AAAA
 --- !u!222 &889124855
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -354,7 +354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 160, y: -20}
+  m_AnchoredPosition: {x: 250, y: -20}
   m_SizeDelta: {x: 1340, y: 754}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &928081742
@@ -660,8 +660,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -170, y: 0}
-  m_SizeDelta: {x: 1000, y: 754}
+  m_AnchoredPosition: {x: -255, y: 0}
+  m_SizeDelta: {x: 850, y: 754}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1636429934
 MonoBehaviour:
